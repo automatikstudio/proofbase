@@ -8,9 +8,18 @@ export const metadata: Metadata = {
   keywords: ["testimonials", "social proof", "reviews", "widget", "embed"],
   openGraph: {
     title: "ProofBase — Social Proof That Sells",
-    description:
-      "Collect and display testimonials effortlessly with beautiful embeddable widgets.",
+    description: "Collect and display testimonials effortlessly with beautiful embeddable widgets.",
     type: "website",
+    siteName: "ProofBase",
+    url: "https://proofbase-blue.vercel.app",
+    images: [{ url: "https://proofbase-blue.vercel.app/og-image.png", width: 1200, height: 630, alt: "ProofBase — Social Proof That Sells" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "ProofBase — Social Proof That Sells",
+    description: "Collect and display testimonials effortlessly with beautiful embeddable widgets.",
+    creator: "@automatikstudio",
+    images: ["https://proofbase-blue.vercel.app/og-image.png"],
   },
 };
 
