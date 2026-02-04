@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Figtree:wght@300;400;500;600;700&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Figtree', sans-serif;
+  background-color: #FFF1F2;
+  color: #18181B;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'DM Serif Display', serif;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FFF1F2;
+}
+::-webkit-scrollbar-thumb {
+  background: #DB2777;
+  border-radius: 3px;
+}
+
+/* Testimonial card hover */
+.testimonial-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.testimonial-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px rgba(219, 39, 119, 0.12);
+}
+
+/* Carousel animation */
+@keyframes slide {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.animate-slide {
+  animation: slide 30s linear infinite;
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #DB2777, #7C3AED);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Pulse glow */
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(219, 39, 119, 0.4); }
+  50% { box-shadow: 0 0 0 12px rgba(219, 39, 119, 0); }
+}
+.pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
