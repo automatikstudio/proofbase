@@ -29,6 +29,12 @@ export default function Header() {
           >
             How it works
           </Link>
+          <Link
+            href="/blog"
+            className="text-sm font-medium text-zinc-600 hover:text-brand-pink transition-colors"
+          >
+            Blog
+          </Link>
         </nav>
         <div className="flex items-center gap-3">
           <Link
